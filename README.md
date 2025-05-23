@@ -1,5 +1,5 @@
 # The-6th-Guro-Digital-Academy-for-the-Disabled
-제6회 구로장애인디지털아카데미
+제 6회 구로장애인디지털아카데미
 
 1. Kali Linux 블라인드로 차단된 상태.
 
