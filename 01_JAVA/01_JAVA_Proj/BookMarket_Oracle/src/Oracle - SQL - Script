@@ -1,0 +1,75 @@
+/* Oracle - SQL - Script */
+
+-- system 계정으로 접속한 쿼리창에서만 계정을 생성 할 수 있다. 
+
+-- 1. BOOKMARKET 계정을 생성 :  Oracle 12 버젼 이상 부터 계정 생성시 C##계정명    ⇐ 공백주의, 공백없음
+       -- 계정명 : BOOKMARKET   암호 : 1234 
+
+create user C##BOOKMARKET identified by 1234
+default tablespace USERS
+temporary tablespace TEMP; 
+
+
+
+-- 2. HR 계정에 권한을 부여하기 : connect : 접속 , resource : 객체 생성, 수정, 삭제   
+
+grant resource, connect to C##BOOKMARKET; 
+grant create view to C##BOOKMARKET ; 
+
+
+--3. HR 계정에게 테이블 스페이스에서 사용량 할당. 
+
+alter user C##BOOKMARKET quota unlimited on USERS; 
+
+
+
+
+
+
+
+Oracle Table 생성 
+
+
+CREATE TABLE books (
+    isbn            VARCHAR2(20) constraint PK_books_isbn PRIMARY KEY,
+    title           VARCHAR2(200),
+    price           NUMBER(10),
+    author          VARCHAR2(100),
+    description     CLOB,
+    category        VARCHAR2(50),
+    publish_date    DATE
+);
+
+
+/* books : 더미 데이터 Insert */ 
+INSERT INTO books (
+    isbn, title, price, author, description, category, publish_date
+) VALUES (
+    'ISBN1234', '쉽게 배우는 JSP 웹 프로그래밍', 27000, '송미영','단계별로 쇼핑몰을 구현하며 배우는 JSP 웹 프로그래밍', 'IT전문서', TO_DATE('2018/10/08', 'YYYY/MM/DD')
+);
+
+
+INSERT INTO books (
+    isbn, title, price, author, description, category, publish_date
+) VALUES (
+    'ISBN1235', '안드로이드 프로그래밍', 33000, '우재남', '실습 단계별 명쾌한 멘토링!', 'IT전문서', TO_DATE('2022/01/22', 'YYYY/MM/DD')
+);
+
+INSERT INTO books (
+    isbn, title, price, author, description, category, publish_date
+) VALUES (
+    'ISBN220913101957', '스크래치', 22000, '고광일', '컴퓨팅 사고력을 키우는 블록 코딩', '컴퓨터입문', TO_DATE('2019/06/10', 'YYYY/MM/DD')
+);
+
+INSERT INTO books (
+    isbn, title, price, author, description, category, publish_date
+) VALUES (
+    'ISBN250409122836', '홍길동전', 30000, '허균', '소설 정의를 세우는 홍길동', '픽션', TO_DATE('2025/03/31', 'YYYY/MM/DD')
+);
+
+commit; 
+
+
+
+
+
