@@ -1,0 +1,70 @@
+https://learn.microsoft.com/ko-kr/sysinternals/downloads/sysinternals-suite
+ZoomIt 화면 확대 기능 : Ctrl + 1 / 확대 취소 : Esc
+
+OS의 정보를 확인 하는 명령어 [ 시작 =>실행 ], wln+r
+시스템 정보 : msinfo32
+
+[Procexp64] - 특정 프로그램을 쉽게 확인 , 강제 종료 . windows OS의 여러 문제 해결
+
+프로그램 (Program) : *exe, *bat, *,cnd < == 실행 파일, HDD 에 저장된 실행파일
+프로세스 (Process) : RAM 에 로드된 실행파일
+프로세서 (Processor) : CPU (연산을 처리)
+
+[검색] - 구글 - 계정 생성
+Ai - ChatGPT , Google gemini , 소넷 3.7 , 퍼플랙 시티 , 트위터 그록 , 뤼튼 , 펠로
+
+유튜브 : 검색 - 모든 정보
+
+[노트 프로그램]
+- 옛날 : 에버노트, MS윈노트, 구글 docs
+- 근래 : 노선 ( 클라우드 노트 / 팀협임 ) , 옵시디언[*, md] <== 강추 (완전 무료)
+
+자바 개발 환경 구성 ( SUN[무료] ==> Oracle[유료] ) , 제임스 고슬링 [ 오픈 소스 ]
+1. JDK 설치 : LTS (Long Term Support : 3년이상 기술 지원되는 버전 , OPEN JDK 종류가 많다.
+	1.8 LTS 버전까지는 무료 [8.0]
+	1.7 LTS	Spring Boot 3.x
+	21 LTS
+	
+2. IDE (통합개발환경 : Eclipse [ IBM 무료, 교육 ] , intelllj [제트브레인/유료, 1년 50만원], VSCode 
+	요즘은 IDE 내부에 JDK가 내장 되어 있음
+
+폴렛폼 : 하드웨어 폴랫폼 : CPU 의 종류 , intel/AMD , MAC M1/M2/M3, ARM
+	소프트웨어 폴랫폼 : OS 의 종류 , Windows OS, Linux/Unix, MAC,
+
+C, C++ " 폴랫폼에 종속적이다. 폴랫폼마다 그 폴랫폼에 맞는 컴파일을 해야 한다.
+JAVA : 폴랫폼에 독립적이다. 
+	- 자바는 중간언어로 컴파일[바이트코드]을 한다. jvm 해당 폴랫폼에 맞는 코드로 완전 기계어로 컴파일
+	*,JAVA [원본소스] ==컴파일==> *,class [바이트코드] ==>JVM==> 해당 폴랫폼에 맞는 기계어 코드로 변환
+
+컴파일 [빌드] : 영문으로된 프로그램을 =[컴파일러.javac.exe]=> 기계어 [0,1] - H/W [ CPU , RAM , HDD , LAN ]
+
+JDK 설치 확인 : 설치되어있으면 버전 정보를 출력
+java -version
+javac -version
+
+PATH 변수 설정 : 어떤 경로에서도 자바 명령어를 실행 할 수 없도록 등록
+C:\Program Files\Java\jdk-17\bin
+
+폴더 이동 : cd C:\Program Files\Java\jdk-17\bin
+
+cd C:\
+dir : 현재 폴더의 내용 출력
+
+프로그램의 위치를 찾는 명령어 [ Windows]
+Where java.exe
+where cmd
+where notepad
+
+1. 버전(Edition) 선택
+Java SE (Standard Edition) : 순수 Java Project [ 선택 ]
+Java EE (Eneerprise Edition) : Java Wab 개발 . 톰켓 , JSP 
+
+2. JDK 17 LTS 선택 : Bin 폴더가 들어가면 안됨
+C:\Program Files\Java\jdk-17
+
+작업 디렉토리 설정 [ 프로잭트 기본폴더 ]
+C:\WorkSpace\01_JAVA_Proj
+
+프로젝트 하위 폴더
+src : 자바 프로그램의 원본 소스를 저장 	, *,JAVA
+bin : 컴파일된 바이트코드 가 저장 		, *,class	<== JVM이 실행
