@@ -1,0 +1,35 @@
+시작[오른쪽 클리] => 실행 : win + r   <== 단축키
+ncpa.cpl              <== 네트워크 구성 창 열기 단축키 
+
+가상화 (Virtualization)  : 실제 컴퓨터 를 가상화 해서 여러개의 컴퓨터를 구현하는 기술 (VMware / VirtualBox) 
+     - HOST 		: (실제 컴퓨터) ,   Host OS
+     - VM (Virtual Machine)    : 가짜 컴퓨터 ,     VM, Guest OS 
+
+컴퓨터 : 시스템 (CPU, RAM, HDD, LAN)        H/W 
+운영체제 ( OS : Operating System ) 
+	- Clinet OS 	: windows 10/11, MAC / 	<== PC/노트북
+			안드로이드(linux)/ ios                     <== 핸드폰 
+	- Server OS	: Windows Server 2022/2025,  (유료) 
+			  Linux ( Red Hat Linx, CentOS 8 (x) => Rocky 9 , Ubuntu, Kali Linux (해킹) ,
+				 Debian , Suse Linux )
+			 Unix : IBM Unix, HP Unix, SUN Unix, FreeBSD  <==  고성능 컴퓨터(안정적) , 은행, 정부기관,대기업
+Application (pc/server) , App (Mobile)  :  OS에 설치되는 프로그램 
+
+
+DBMS (DataBase Management System) : 데이터를 저장(체계적, 대량의,읽기/쓰기 ) , 영속성, 여러명이 동시에 사용(계정), 보안설정, 다중  CPU / 대량의 RAM,  클러스터 구성 
+	Oracle 21C XE    <== 무료 사용 버젼(실습) ,   운영 ( Oracle Standard / Enprise Edtion) , 비용이 비싸다. 은행/대기업/정부기관 / 오류가 잘 발생 안된다. 클러스터 구성 
+		구글 검색 : oracle 21c xe download
+		https://www.oracle.com/kr/database/technologies/xe-downloads.html
+
+	MySQL	         <== 무료(Community Edtion) , 유료(Standard / Enterprise) 
+		구글 검색 : mysql community download
+		https://dev.mysql.com/downloads/installer/
+		
+	MariaDB	         <== 완전 무료 ( Linux ) 
+	Postgre SQL       <== 무료 ,  Oracle 호환 / 백터 DB ( AI 로 연동 추천 서비스 ) 
+	IBM DB2	          
+	Infomix
+	MS-SQL
+	Sybase 
+	...
+
